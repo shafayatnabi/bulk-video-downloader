@@ -127,7 +127,7 @@ class MainWindow(QMainWindow, DownloadProgressCallback):
         main_layout.addWidget(title_label)
         
         # URL Input Section
-        url_group = QGroupBox("URL Input")
+        url_group = QGroupBox("")
         url_layout = QVBoxLayout(url_group)
         
         # URL input field
@@ -139,6 +139,7 @@ class MainWindow(QMainWindow, DownloadProgressCallback):
         
         self.crawl_button = QPushButton("Crawl for Videos")
         self.crawl_button.setMinimumHeight(35)
+        self.crawl_button.setMinimumWidth(120)
         self.crawl_button.setStyleSheet("""
             QPushButton {
                 background-color: #4CAF50;
