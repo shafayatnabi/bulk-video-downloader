@@ -4,7 +4,12 @@ Main entry point for the Bulk Video Downloader application
 """
 
 import sys
+import os
 from PyQt6.QtWidgets import QApplication
+
+# Add the src directory to the Python path
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 from gui.main_window import MainWindow
 
 
